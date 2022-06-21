@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-21T10:05:32 IST" name="Default suite" finished-at="2022-06-21T10:06:17 IST" duration-ms="44879">
+    <groups>
+    </groups>
+    <test started-at="2022-06-21T10:05:32 IST" name="Default test" finished-at="2022-06-21T10:06:17 IST" duration-ms="44879">
+      <class name="TestCases.SharePriceCheck">
+        <test-method is-config="true" signature="setup()[pri:0, instance:TestCases.SharePriceCheck@1184ab05]" started-at="2022-06-21T10:05:32 IST" name="setup" finished-at="2022-06-21T10:05:44 IST" duration-ms="12467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchd()[pri:0, instance:TestCases.SharePriceCheck@1184ab05]" started-at="2022-06-21T10:05:44 IST" name="searchd" finished-at="2022-06-21T10:06:17 IST" duration-ms="32209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.SharePriceCheck@1184ab05]" started-at="2022-06-21T10:06:17 IST" name="tearDown" finished-at="2022-06-21T10:06:17 IST" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.SharePriceCheck -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="DCITimeSheet"> 
+	<test name="DataCoreTimeSheetTest">
+		<parameter name="browser" value= "Firefox"></parameter>
+		<parameter name="url" value= "http://eip.datacoresystems.com/"></parameter>
+		<parameter name="username" value= "ppanda"></parameter>
+		<parameter name="password" value= "DCIpkp791"></parameter>
+<!-- <groups>
+            <run>
+                <include name="sample-tests" />
+            </run>
+     </groups>
+ -->		
+		<classes>
+			<class name="TestCases.ParameterTest"/>
+		</classes>
+	</test>
+</suite>
