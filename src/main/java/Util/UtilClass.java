@@ -18,6 +18,7 @@ public class UtilClass {
 	sharelists.add(6, "Maruti Suzuki India Ltd.");
 	sharelists.add(7, "Bandhan Bank Ltd.");	
 	sharelists.add(8, "Tata power");
+	sharelists.add(9, "Jain Irrigation Systems Ltd.");
 	
 	return sharelists;
 	}
