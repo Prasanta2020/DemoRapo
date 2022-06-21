@@ -1,5 +1,5 @@
 package TestCases;
-
+//method and constructor 
 public class Demo1 {
 
 	public void abc(){
