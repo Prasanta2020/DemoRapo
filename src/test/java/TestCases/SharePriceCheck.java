@@ -58,8 +58,8 @@ public void setup() {
 //	 
 //	}
 
-@Test
-public void searchd() throws InterruptedException {
+@Test(invocationCount=0)
+public void search() throws InterruptedException {
 	List<String> sharelists = obj.sharelist();
 	System.out.println("Current Share Price::"+obj.dateShow());
 	System.out.println("*************************************************");
@@ -72,6 +72,11 @@ public void searchd() throws InterruptedException {
 	Thread.sleep(70);}	
 	 
 	}
+@Test
+public void checkmike() {
+	WebElement gmike = driver.findElement(By.xpath("\\button[@id='voiceSearchButton']"));
+	System.out.println(gmike.getText());
+}
  
 @AfterMethod
 public void tearDown(){
