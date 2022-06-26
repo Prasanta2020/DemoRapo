@@ -5,9 +5,9 @@
     <classes>
       <class name="TestCases.SharePriceCheck">
         <methods>
+          <include name="search"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="checkmike"/>
         </methods>
       </class> <!-- TestCases.SharePriceCheck -->
     </classes>

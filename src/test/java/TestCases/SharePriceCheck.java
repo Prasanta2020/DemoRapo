@@ -23,7 +23,7 @@ public void setup() {
 	System.setProperty("webdriver.chrome.driver","C:\\Selenium\\Drivers\\chromedriver.exe");
 	driver = new ChromeDriver();
 	driver.get("https://money.rediff.com/index.html");
-	driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+	driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	driver.manage().window().maximize();
 	driver.manage().deleteAllCookies();
@@ -58,7 +58,7 @@ public void setup() {
 //	 
 //	}
 
-@Test(invocationCount=0)
+@Test(invocationCount=1)
 public void search() throws InterruptedException {
 	List<String> sharelists = obj.sharelist();
 	System.out.println("Current Share Price::"+obj.dateShow());
@@ -72,11 +72,11 @@ public void search() throws InterruptedException {
 	Thread.sleep(70);}	
 	 
 	}
-@Test
-public void checkmike() {
-	WebElement gmike = driver.findElement(By.xpath("\\button[@id='voiceSearchButton']"));
-	System.out.println(gmike.getText());
-}
+//@Test
+//public void checkmike() {
+//	WebElement gmike = driver.findElement(By.xpath("\\button[@id='voiceSearchButton']"));
+//	System.out.println(gmike.getText());
+//}
  
 @AfterMethod
 public void tearDown(){
