@@ -1,5 +1,6 @@
 package TestCases;
 import java.text.DateFormat;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -9,6 +10,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -22,6 +24,8 @@ public class SharePriceCheck {
 public void setup() {
 	System.setProperty("webdriver.chrome.driver","C:\\Selenium\\Drivers\\chromedriver.exe");
 	driver = new ChromeDriver();
+//	System.setProperty("webdriver.gecko.driver","C:\\Selenium\\Drivers\\geckodriver.exe");
+//	driver = new FirefoxDriver();
 	driver.get("https://money.rediff.com/index.html");
 	driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -58,7 +62,8 @@ public void setup() {
 //	 
 //	}
 
-@Test(invocationCount=1)
+//@Test(invocationCount=1)
+@Test
 public void search() throws InterruptedException {
 	List<String> sharelists = obj.sharelist();
 	System.out.println("Current Share Price::"+obj.dateShow());
